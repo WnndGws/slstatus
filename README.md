@@ -6,6 +6,12 @@ slstatus is a suckless status monitor for window managers that use WM_NAME
 For my bar:
 `clean make install` for each component in the formatting demanded by `bottom_bar_script` and rename the binaries (eg. `slstatus.cpu`) in $HOME/.local/bin
 
+## My binaries
+|-------------------------|--------------|
+| String formatting       | binary name  |
+|-------------------------|--------------|
+| { cpu_perc, "C%s%%", }, | slstatus.cpu |
+|-------------------------|--------------|
 
 Features
 --------
