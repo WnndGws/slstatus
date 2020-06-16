@@ -4,7 +4,7 @@ slstatus is a suckless status monitor for window managers that use WM_NAME
 (e.g. dwm) or stdin to fill the status bar.
 
 For my bar:
-`clean make install` for each component in the formatting demanded by `bottombar_script` and rename the binaries (eg. `slstatus.cpu)` in $HOME/.local/bin
+`clean make install` for each component in the formatting demanded by `bottom_bar_script` and rename the binaries (eg. `slstatus.cpu`) in $HOME/.local/bin
 
 
 Features
