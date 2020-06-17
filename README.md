@@ -11,6 +11,7 @@ For my bar:
 | String formatting       | binary name  |
 |-------------------------|--------------|
 | { cpu_perc, "C%s%%", }, | slstatus.cpu |
+| { ram_perc, "M%s%%", }  | slstatus.mem |
 
 Features
 --------
