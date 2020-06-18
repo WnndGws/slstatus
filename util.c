@@ -101,8 +101,9 @@ fmt_human(uintmax_t num, int base)
 	const char **prefix;
 	const char *prefix_1000[] = { "", "k", "M", "G", "T", "P", "E", "Z",
 	                              "Y" };
-	const char *prefix_1024[] = { "b/s", "Ki/s", "Mi/s", "Gi/s", "Ti/s", "Pi/s", "Ei/s",
-	                              "Zi/s", "Yi/s" };
+	/* const char *prefix_1024[] = { "b/s", "Ki/s", "Mi/s", "Gi/s", "Ti/s", "Pi/s", "Ei/s",
+	                              "Zi/s", "Yi/s" }; */
+	const char *prefix_1024[] = { "b/s", "Ki/s" };
 
 	switch (base) {
 	case 1000:
