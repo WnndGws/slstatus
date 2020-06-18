@@ -8,11 +8,12 @@ For my bar:
 
 ## My binaries
 
-| String formatting                 | binary name   |
-|-----------------------------------|---------------|
-| { cpu_perc, "C%s%%", },           | slstatus.cpu  |
-| { ram_perc, "M%s%%", }            | slstatus.mem  |
-| { netspeed_rx, "W%9s", "wlan0" }, | slstatus.wlan |
+| String formatting                   | binary name       |
+|-------------------------------------|-------------------|
+| { cpu_perc, "C%s%%", },             | slstatus.cpu      |
+| { ram_perc, "M%s%%", }              | slstatus.mem      |
+| { netspeed_rx, "W%9s", "wlan0" },   | slstatus.wlan     |
+| { datetime, "T%s", "%a %d-%m %H:%M" | slstatus.datetime |
 
 Features
 --------
