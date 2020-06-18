@@ -101,8 +101,8 @@ fmt_human(uintmax_t num, int base)
 	const char **prefix;
 	const char *prefix_1000[] = { "", "k", "M", "G", "T", "P", "E", "Z",
 	                              "Y" };
-	const char *prefix_1024[] = { "", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei",
-	                              "Zi", "Yi" };
+	const char *prefix_1024[] = { "b/s", "Ki/s", "Mi/s", "Gi/s", "Ti/s", "Pi/s", "Ei/s",
+	                              "Zi/s", "Yi/s" };
 
 	switch (base) {
 	case 1000:
@@ -123,7 +123,7 @@ fmt_human(uintmax_t num, int base)
 		scaled /= base;
 	}
 
-	return bprintf("%.1f %s", scaled, prefix[i]);
+	return bprintf("%.0f %s", scaled, prefix[i]);
 }
 
 int
